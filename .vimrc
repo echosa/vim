@@ -87,6 +87,9 @@ autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml autocmd BufWriteP
 
 let mapleader = ','
 
+" Close buffer but not split window.
+nmap <leader>d :b#<bar>bd#<CR>
+
 " Some helpers to edit mode http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>ew :e %%
