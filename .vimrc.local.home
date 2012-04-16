@@ -1,0 +1,42 @@
+fu! MyPHPSetup()
+    let g:syntastic_phpcs_conf="--standard=Zend"
+    let g:pdv_cfg_Category = "Webapp"
+    let g:pdv_cfg_Version = "//autogen//"
+    let g:pdv_cfg_Author = "Brian Zwahr <echosa@gmail.com>"
+    let g:pdv_cfg_Copyright = "2012 Brian Zwahr"
+    let g:pdv_cfg_License = "http://opensource.org/licenses/gpl-3.0.html GNU General Public License, version 3"
+    let g:pdv_cfg_Uses = 0
+    let g:pdv_cfg_php4always = 0
+    let g:pdv_cfg_php4guessval = "private"
+endf
+call MyPHPSetup()
+
+fu! LoadDeckbuilder()
+    set tags=~/.vim.tags/deckbuilder,~/.vim.tags/zf1,~/.vim.tags/phpunit
+    let g:pdv_cfg_Package = "Deckbuilder"
+    call MyPHPSetup()
+endf
+:au BufRead /Users/echosa/webapp/deckbuilder/*.ph* call LoadDeckbuilder()
+
+fu! SyncDeckbuilder(includeGithub, commitMessage)
+    if a:includeGithub == 1
+        !phpunit --configuration ~/webapp/deckbuilder/tests/phpunit.xml
+                    \ && cd ~/webapp/deckbuilder
+                    \ && /usr/local/my/zend-sdk-cli-0.6.0/tools/zend push application -m a:commitMessage
+                    \ && /usr/local/my/zend-sdk-cli-0.6.0/tools/zend push application -r github -m a:commitMessage
+    else 
+        !phpunit --configuration ~/webapp/deckbuilder/tests/phpunit.xml 
+                    \ && cd ~/webapp/deckbuilder 
+                    \ && /usr/local/my/zend-sdk-cli-0.6.0/tools/zend push application -m a:commitMessage
+    endif
+endf 
+
+fu! TestDeckbuilder()
+    !phpunit --configuration ~/webapp/deckbuilder/tests/phpunit.xml
+endf
+
+fu! CheckDeckbuilder()
+    !php-check.sh ~/webapp/deckbuilder-check.cfg
+endf
+
+
