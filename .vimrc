@@ -9,11 +9,11 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'spf13/PIV'
+Bundle 'Lokaltog/vim-powerline'
 "Bundle 'majutsushi/tagbar'
 "Bundle 'MarkWeber/vim-addon-mw-utils'
 "Bundle 'tomtom/tlib_vim'
 "Bundle 'mileszs/ack.vim'
-"Bundle 'Lokaltog/vim-powerline'
 "Bundle 'spf13/vim-colors'
 "Bundle 'tpope/vim-surround'
 "Bundle 'AutoClose'
@@ -113,6 +113,22 @@ let g:DisableAutoPHPFolding = 1
 
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>m :CtrlPMRU<CR>
+
+if has('statusline')
+    set laststatus=2
+
+    "" Broken down into easily includeable segments
+    "set statusline=%<%f\    " Filename
+    "set statusline+=%w%h%m%r " Options
+    "set statusline+=%{fugitive#statusline()} "  Git Hotness
+    "set statusline+=\ [%{&ff}/%Y]            " filetype
+    "set statusline+=\ [%{getcwd()}]          " current dir
+    "set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
+endif
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
