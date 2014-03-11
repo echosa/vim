@@ -6,39 +6,12 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'scrooloose/syntastic'
 Bundle 'echosa/syntastic'
 Bundle 'scrooloose/nerdcommenter'
-"Bundle 'spf13/PIV'
 Bundle 'echosa/PIV'
 Bundle 'Lokaltog/vim-powerline'
-"Bundle 'majutsushi/tagbar'
-"Bundle 'MarkWeber/vim-addon-mw-utils'
-"Bundle 'tomtom/tlib_vim'
-"Bundle 'mileszs/ack.vim'
-"Bundle 'spf13/vim-colors'
-"Bundle 'tpope/vim-surround'
-"Bundle 'AutoClose'
-"Bundle 'vim-scripts/sessionman.vim'
-"Bundle 'matchit.zip'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'godlygeek/csapprox'
-"Bundle 'jistr/vim-nerdtree-tabs'
-"Bundle 'flazz/vim-colorschemes'
-"Bundle 'garbas/vim-snipmate'
-"Bundle 'spf13/snipmate-snippets'
-" Source support_function.vim to support snipmate-snippets.
-"source $HOME/.vim/bundle/snipmate-snippets/snippets/support_functions.vim 
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'godlygeek/tabular'
-"Bundle 'Shougo/neocomplcache'
-"Bundle 'leshill/vim-json'
-"Bundle 'groenewege/vim-less'
-"Bundle 'taxilian/vim-web-indent'
-"Bundle 'HTML-AutoCloseTag'
-"Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
-"Bundle 'spf13/vim-markdown'
-"Bundle 'spf13/vim-preview'
+Bundle 'tpope/vim-surround'
+Bundle 'AutoClose'
 filetype plugin indent on
 
 set background=dark
@@ -131,6 +104,8 @@ endif
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
+
+imap jk <ESC>
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
