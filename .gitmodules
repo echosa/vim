@@ -1,0 +1,21 @@
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = https://github.com/rking/ag.vim
+[submodule "bundle/php.vim"]
+	path = bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/phpcomplete.vim"]
+	path = bundle/phpcomplete.vim
+	url = git://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-sleuth"]
+	path = bundle/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule "bundle/vim-twig"]
+	path = bundle/vim-twig
+	url = https://github.com/evidens/vim-twig
