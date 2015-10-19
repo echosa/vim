@@ -1,5 +1,12 @@
 execute pathogen#infect()
 
+syntax enable
+set background=dark
+if !has('gui_running')
+  let g:solarized_termcolors=256
+endif
+colorscheme solarized
+
 set number
 set hidden
 set ignorecase
@@ -15,13 +22,6 @@ nmap <leader>d :b#<bar>bd#<CR>
 """""""""""
 " ARCHIVE "
 """""""""""
-
-"syntax enable
-"set background=dark
-"if !has('gui_running')
-"  let g:solarized_termcolors=256
-"endif
-"colorscheme solarized
 
 "noremap <leader>p :CtrlP<CR>
 "let g:ctrlp_max_files=100000
