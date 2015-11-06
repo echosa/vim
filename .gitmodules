@@ -3,16 +3,16 @@
 	url = https://github.com/rking/ag.vim
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
-	url = https://github.com/StanAngeloff/php.vim.git
+	url = https://github.com/StanAngeloff/php.vim
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
-	url = git://github.com/shawncplus/phpcomplete.vim.git
+	url = https://github.com/shawncplus/phpcomplete.vim
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible
 [submodule "bundle/vim-sleuth"]
 	path = bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
@@ -24,7 +24,7 @@
 	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bundle/vim-php-namespace"]
 	path = bundle/vim-php-namespace
-	url = git@github.com:vim-scripts/vim-php-namespace.git
+	url = https://github.com/vim-scripts/vim-php-namespace
 [submodule "bundle/vim-php-refactoring-toolbox"]
 	path = bundle/vim-php-refactoring-toolbox
-	url = git@github.com:vim-scripts/VIM-PHP-Refactoring-Toolbox.git
+	url = https://github.com/vim-scripts/VIM-PHP-Refactoring-Toolbox
