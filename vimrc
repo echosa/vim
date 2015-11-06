@@ -19,6 +19,11 @@ let mapleader = " "
 " Close buffer but not the split window.
 nmap <leader>d :b#<bar>bd#<CR>
 
+"inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+noremap <Leader>u :call PhpInsertUse()<CR>
+"inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
+noremap <Leader>e :call PhpExpandClass()<CR>
+
 """""""""""
 " ARCHIVE "
 """""""""""

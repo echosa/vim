@@ -22,3 +22,9 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/vim-php-namespace"]
+	path = bundle/vim-php-namespace
+	url = git@github.com:vim-scripts/vim-php-namespace.git
+[submodule "bundle/vim-php-refactoring-toolbox"]
+	path = bundle/vim-php-refactoring-toolbox
+	url = git@github.com:vim-scripts/VIM-PHP-Refactoring-Toolbox.git
